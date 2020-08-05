@@ -14,14 +14,14 @@ jest.mock('react-router-dom', () => {
     Link: ({ children }: { children: React.ReactNode }) => children,
   };
 });
-jest.mock('../../hooks/auth', () => {
+jest.mock('../../hooks/Auth', () => {
   return {
     useAuth: () => ({
       mockedSignIn,
     }),
   };
 });
-jest.mock('../../hooks/toast', () => {
+jest.mock('../../hooks/Toast', () => {
   return {
     useToast: () => ({
       addToast: mockedAddToast,
