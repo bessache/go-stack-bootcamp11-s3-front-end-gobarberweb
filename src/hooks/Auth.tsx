@@ -78,7 +78,7 @@ const AuthProvider: React.FC = ({ children }) => {
 
 function useAuth(): AuthContextData {
   const context = useContext(AuthContext);
-  
+
   return context;
 }
 
